@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget* parent) :
 {
   ui = new Ui::MainWindow();
   ui->setupUi(this);
+  ui->horizontalLayout->addWidget(new QPushButton(tr("Translate"), this));
   connect(ui->actionOpen_File, SIGNAL(triggered()), this, SLOT(openFile()));
 }
 

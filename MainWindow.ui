@@ -20,7 +20,7 @@
       <item>
        <widget class="QPushButton" name="fileOpenButton">
         <property name="text">
-         <string>Открыть файл...</string>
+         <string>Open file ...</string>
         </property>
        </widget>
       </item>
@@ -53,10 +53,6 @@
      </widget>
     </item>
    </layout>
-   <zorder>horizontalSpacer</zorder>
-   <zorder>fileOpenButton</zorder>
-   <zorder>label</zorder>
-   <zorder>fileOpenButton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -64,15 +60,27 @@
      <x>0</x>
      <y>0</y>
      <width>338</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMenu">
     <property name="title">
-     <string>menu</string>
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
     </property>
    </widget>
    <addaction name="menuMenu"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionOpen_File">
